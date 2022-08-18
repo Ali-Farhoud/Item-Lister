@@ -1,6 +1,7 @@
 let form = document.getElementById('addForm')
 let item = document.getElementById('items')
 let search = document.getElementById('filter')
+
 //form submit event
 item.addEventListener('click', removeItem)
 form.addEventListener('submit', addItem)
@@ -34,7 +35,8 @@ function removeItem(e) {
 }
 function filterItem(e) {
 	let current = e.target.value.toLowerCase()
-	let stuff = items.getElementsByTagName('li')
+	let stuff = item.getElementsByTagName('li')
+	console.log(item)
 	Array.from(stuff).forEach(function (item) {
 		let itemName = item.firstChild.textContent.toLowerCase()
 		if (itemName.indexOf(current) != -1) {
