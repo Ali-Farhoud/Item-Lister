@@ -36,7 +36,7 @@ function removeItem(e) {
 function filterItem(e) {
 	let current = e.target.value.toLowerCase()
 	let stuff = item.getElementsByTagName('li')
-	console.log(item)
+
 	Array.from(stuff).forEach(function (item) {
 		let itemName = item.firstChild.textContent.toLowerCase()
 		if (itemName.indexOf(current) != -1) {
