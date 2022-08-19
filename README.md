@@ -9,3 +9,4 @@ function is called to manipulate elements of the DOM resulting in a dynamic webs
 - onClick : clicking on the delete button of an item will remove the element from dom
 - onKeyUp : when typing on a search bar, the list of items will filter out the items that don't include the characters 
 
+Also, css framework Bootstrap is used for styling
